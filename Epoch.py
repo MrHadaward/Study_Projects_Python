@@ -29,7 +29,6 @@ while True:
     print('----------------------------------------------------------------\n')
     
 # Wait one second and clean the screen 
-# Online Version
 
     time.sleep(1)
     os.system('cls')
