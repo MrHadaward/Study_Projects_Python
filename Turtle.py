@@ -18,6 +18,4 @@ alice = turtle.Turtle()
 
 polygon(alice, 100, 10)
 
-#Version 2.0
-
 turtle.mainloop()
