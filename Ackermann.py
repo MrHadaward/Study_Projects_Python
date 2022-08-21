@@ -1,4 +1,4 @@
-# Objective of this project is define a recursive function that evaluete the ackermann function
+# Objective of this project is to define a recursive function that evaluete the ackermann function
 
 def ackermann(m, n):
 
