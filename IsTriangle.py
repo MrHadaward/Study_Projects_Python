@@ -3,6 +3,7 @@
 
 
 def is_triangle(a, b, c):
+
     '''Takes te positive numbers a, b and c and tests if they can form a triangle'''
 
     numbers = [a, b, c]
@@ -16,11 +17,11 @@ def is_triangle(a, b, c):
 
     if minimun_value1 + minimun_value2 >= max_value:
         print(' ')
-        print(f'os números {a}, {b} e {c} podem formar um triângulo !')
+        print(f'The numbers {a}, {b} and {c} can form a triangle !')
     
     else:
         print(' ')
-        print(f'os números {a}, {b} e {c} não podem formar um triângulo.')
+        print(f'The numbers {a}, {b} and {c} can\'t form a triangle.')
 
 # Take the input for the sides of the triangle and validate them
 
