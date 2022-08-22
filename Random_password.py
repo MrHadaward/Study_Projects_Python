@@ -1,6 +1,10 @@
 import random
 
+# Random password generator
+
 print(' ')
+
+# Ask how many characters the user want and validate the input
 
 while True:
     quantity = input('How many characters do you want ? ')
@@ -9,6 +13,8 @@ while True:
         break
 
 print(' ')
+
+# Generate random characters in the same quantity the user typed
 
 password = ''
 
