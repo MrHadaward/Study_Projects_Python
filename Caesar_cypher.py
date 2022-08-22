@@ -21,7 +21,7 @@ while not fine:
             break
     
     while True:
-        rot = input('Rotatio: ')
+        rot = input('Rotation: ')
         if rot.isnumeric() and int(rot) - float(rot) == 0:
             rot = int(rot) % 26
             break
