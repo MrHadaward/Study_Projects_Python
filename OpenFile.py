@@ -1,5 +1,9 @@
+# Objective of this project is to define some functions to filter this word list
+
 fin = open('Words.txt')
 words = fin.read().split()
+
+# checks wheter a word is ou not abcedarian
 
 def is_abecedarian(words):
     for word in words:
@@ -20,6 +24,8 @@ def is_abecedarian(words):
             print(word)
 
 
+# checks if a word uses all given letters
+
 def uses_all(words, lette):
     for word in words:
         nothas = False
@@ -36,6 +42,8 @@ def uses_all(words, lette):
             print(word)
 
 
+# cheks if a word uses only the given letters 
+
 def uses_only(words, lette):
     for word in words:
         nothas = False
@@ -51,6 +59,7 @@ def uses_only(words, lette):
         else:
             print(word)
 
+# checks if a word contain a forbidden letter provided
 
 def avoids(words, forbidden):
     for word in words:
@@ -66,5 +75,3 @@ def avoids(words, forbidden):
 
         else:
             print(word)
-
-is_abecedarian(words)
