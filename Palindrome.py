@@ -1,23 +1,25 @@
-# Objective of this project is to check if a word is a palindrome 
+# Objective of this project is to check if a word is a palindrome
 
-def is_palindrome(word):
+print(' ')
 
-    """Returns True if word is a palindrome."""
-    
-    if len(word) <= 1:
-        return True
-    
-    if word[0] != word[-1]:
-        return False
-    
-    return is_palindrome(word[1:-1])
+print('{0:^20}'.format('Is Palindrome ?'))
+print('{0:^20}\n'.format('-' * 10))
 
-while True :
-    word = input('Type a word: ')
+# Takes the first word and validate it
 
-    if word.isalpha() :
+while True:
+    word1 = input('First word: ')
+    if word1.isalpha():
         break
 
-test = is_palindrome(word)
+print(' ')
 
-print(test)
+# Check wheter it is or not a palindrome
+
+if word1 == word1[::-1]:
+    print('{0:^20}'.format('PALINDROME !!'))
+
+else:
+    print('{0:^20}'.format('not palindrome.'))
+
+print(' ')
