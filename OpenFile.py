@@ -75,3 +75,29 @@ def avoids(words, forbidden):
 
         else:
             print(word)
+
+# find words with three cosecutive equal letters
+
+def three_letters(words):
+    for word in words:
+        itis = False
+        count = 1
+        comp = ''
+        
+
+        for letters in word:
+            if letters == comp:
+                count += 1
+                if count == 3:
+                    itis = True
+                    break
+            else:
+                count = 1
+
+            comp = letters
+    
+        if not itis:
+            pass
+    
+        else:
+            print(word)
