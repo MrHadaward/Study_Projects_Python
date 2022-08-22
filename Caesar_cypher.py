@@ -47,5 +47,6 @@ while not fine:
             print(' ')
             break
     
-print('New message: ', new_text)
+print('New message:', new_text)
 
+print(' ')
