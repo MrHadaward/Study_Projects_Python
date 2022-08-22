@@ -10,6 +10,8 @@ print(' ')
 
 fine = False
 
+# take the message and rotatio from the user and validate them
+
 while not fine:
     fine = True
     while True:
@@ -28,6 +30,8 @@ while not fine:
     
     new_text = ''
     
+# change de old characters for the new rotated ones
+
     for char in text:
         if 97 <= ord(char) <= 122 or ord(char) == 32: 
     
