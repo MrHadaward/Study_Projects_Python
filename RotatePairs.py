@@ -1,10 +1,5 @@
 #Objective of this project is to find all rotate pairs in Words.txt
 
-from itertools import count
-from time import sleep
-from tkinter import W
-
-
 txt_file = open('Words.txt').read().split()
 
 a_dict = {}
