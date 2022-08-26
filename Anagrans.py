@@ -1,6 +1,4 @@
 
-from os import remove
-
 
 def find_anagrams(a_dict):
     anagrams_dict = {}
@@ -32,7 +30,9 @@ def find_anagrams(a_dict):
     a_list.sort(reverse=True)
 
     for values in range(0,11):
-        print(a_list[values])
+        print(a_list[values][1])
+
+
 
 txt_file = open('Words.txt').read().split()
 a_dict = {}
@@ -40,5 +40,6 @@ a_dict = {}
 
 for words in txt_file:
     a_dict[words] = None
+
 
 find_anagrams(a_dict)
