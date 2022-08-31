@@ -1,9 +1,9 @@
 import random
 
 class Hat:
-    contents = []
-
+    
     def __init__(self, **balls):
+        self.contents = []
         for key, val in balls.items():
             for add in range(val):
                 self.contents.append(key)
@@ -47,3 +47,5 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
             green += 1
 
     return green/num_experiments
+
+
