@@ -47,5 +47,3 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
             green += 1
 
     return green/num_experiments
-
-
