@@ -1,5 +1,3 @@
-
-from operator import index
 import random
 import string
 
