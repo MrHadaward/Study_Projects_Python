@@ -1,8 +1,10 @@
 
+from operator import index
+import random
 import string
 
 def emma_histogram():
-    txt_file = open('Emma.txt', encoding='utf-8').read().replace('-', ' ').replace('"', '').split()
+    txt_file = open('Emma.txt', encoding='utf-8').read().replace('-', ' ').split()
     new_dict = {}
 
     for word in txt_file:
@@ -25,10 +27,31 @@ def most_frequent(a_list, top=20):
     for inde in range(top):
         print('{:^5} : {:^5}'.format(a_list[inde][1], a_list[inde][0]))
 
+def random_word(hist):
+    total = 0
+    word_list = []
+    total_list = []
 
-x = 20
+    for key, val in hist.items():
+        total += val
+        word_list.append(key)
+        total_list.append(total)
+    
+    rand_word = random.randint(1, total_list[-1])
+    ind = None
 
-print('{:-^{space}}'.format('Bubble', space = x))
+    if rand_word >= total_list[(len(total_list) // 2)]:
+        for num in total_list[(len(total_list) // 2):]:
+            if rand_word <= num:
+                ind = total_list.index(num)
+                break
+    
+    else:
+        for num in total_list[:(len(total_list) // 2)]:
+            if rand_word <= num:
+                ind = total_list.index(num)
+                break
+    
+    print(word_list[ind])
 
-n = ['12', '+', '1']
-print(eval('abs + gds'))
+random_word(emma_histogram())
