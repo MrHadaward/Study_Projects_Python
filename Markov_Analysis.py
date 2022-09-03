@@ -52,4 +52,28 @@ def random_word(hist):
     
     print(word_list[ind])
 
-random_word(emma_histogram())
+def markov_analysis(a_list, preffix_lenght = 10):
+    analysis = {}
+    preffix_list = []
+    rand_txt = []
+
+    for rep in range((len(a_list)// preffix_lenght)):
+        preffix = ' '.join(a_list[rep : (rep + preffix_lenght)])
+        suffix = a_list[rep + preffix_lenght]
+
+        analysis[preffix] = analysis.get(preffix, []) + [suffix]  
+
+    for pre in analysis:
+        preffix_list.append(pre)
+    
+    for rep in range(10):
+        preffix = random.choice(preffix_list)
+        suffix = random.choice(analysis[preffix])
+        rand_txt.append(preffix)
+        rand_txt.append(suffix)
+    
+    return ' '.join(rand_txt)
+
+emma = open('Emma.txt', encoding='utf-8').read().replace('-', ' ').split()
+
+print(markov_analysis(emma))
