@@ -16,4 +16,5 @@ kanga.put_in(1)
 
 roo = Kangaroo()
 roo.put_in(3)
+
 print(kanga, roo)
