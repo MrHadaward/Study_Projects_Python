@@ -11,10 +11,3 @@ class Kangaroo:
     def put_in(self, object):
         self.pouch.append(str(object))
 
-kanga = Kangaroo()
-kanga.put_in(1)
-
-roo = Kangaroo()
-roo.put_in(3)
-
-print(kanga, roo)
